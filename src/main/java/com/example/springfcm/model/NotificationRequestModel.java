@@ -10,12 +10,16 @@ import lombok.Data;
 @Data
 public class NotificationRequestModel {
 
-    @JsonProperty("data")
-    @SerializedName("data")
-    private NotificationData mData;
-
     @JsonProperty("to")
     @SerializedName("to")
-    private String mTo;
+    private String to;
+
+    @JsonProperty("notification")
+    @SerializedName("notification")
+    private NotificationDataModel notification;
+
+    @JsonProperty("data")
+    @SerializedName("data")
+    private DataModel data;
 
 }

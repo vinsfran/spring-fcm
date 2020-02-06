@@ -8,13 +8,15 @@ import lombok.Data;
  * @author vinsfran
  */
 @Data
-public class NotificationData {
-
-    @JsonProperty("detail")
-    @SerializedName("detail")
-    private String mDetail;
+public class NotificationDataModel {
 
     @JsonProperty("title")
     @SerializedName("title")
-    private String mTitle;
+    private String title;
+
+    @JsonProperty("body")
+    @SerializedName("body")
+    private String body;
+
+
 }
